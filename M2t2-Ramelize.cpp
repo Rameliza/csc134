@@ -35,18 +35,13 @@ int main()
   cout << " We sell " << food_name << " and it's $" << food_price << " each." << endl; 
   cout << "How many gyros do you want?" << endl;
   cin >> how_many; 
-    
-  // Remember tax is two things, the percent and the $
-  double tax_percent = 0.08; // 8% is 8/100
-  double tax_cost = tax_percent * subtotal;
-  total = subtotal + tax_cost;
 
   // Calculate subtotal, tax, total
   tax_percent = 0.08; // assignment says 8%, so 8/100 (as a double)
   subtotal = food_price * how_many;
   tax_cost = subtotal * tax_percent; // 8% of $7.49
   total    = subtotal + tax_cost;
-  
+
   // Print the receipt
   // Tried two ways to line up : setw() and tab \t 
   cout << setprecision(2) << fixed; // magic to turn on 2 decimals
