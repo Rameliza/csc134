@@ -41,17 +41,22 @@ int main()
   double tax_cost = tax_percent * subtotal;
   total = subtotal + tax_cost;
 
+  // Calculate subtotal, tax, total
+  tax_percent = 0.08; // assignment says 8%, so 8/100 (as a double)
+  subtotal = food_price * how_many;
+  tax_cost = subtotal * tax_percent; // 8% of $7.49
+  total    = subtotal + tax_cost;
+  
   // Print the receipt
-  cout << setprecision(2) << fixed; // magic words for 2 decimals
-  // \t is the tab key
-  cout << "YOUR RECEIPT" << endl;
-  cout << "-----------------------" << endl;
-  cout << "Subtotal:\t$" << subtotal << endl;
-  cout << "Tax:\t\t$" << tax_cost << endl;
-  cout << "-----------------------" << endl;
-  cout << "Total:\t\t$" << total << endl;
-  cout << "Have a nice day!" << endl;
-  cout << endl; 
+  // Tried two ways to line up : setw() and tab \t 
+  cout << setprecision(2) << fixed; // magic to turn on 2 decimals
+  cout << food_name << " x " << how_many << endl;
+  cout << "------------------------------------" << endl;
+  cout << setw(12) << "Subtotal:\t$"  << setw(6) << subtotal << endl;
+  cout << setw(12) << "Tax (8%):\t$"  << setw(6) << tax_cost << endl;
+  cout << "------------------------------------" << endl;
+  cout << setw(12) << "Total:\t$"     << setw(6) << total    << endl;
+  cout << "------------------------------------" << endl;
 
 return 0;
 }
