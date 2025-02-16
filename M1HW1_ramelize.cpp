@@ -23,7 +23,7 @@ int main() {
     cout << "Syd : Hip hop is my life, and im just trying to keep the romance alive." << endl;
     cout << "Dre : You can love hip-hop and still have your heart broken." << endl;
     cout << "Syd : It's like the difference between saying you love somebody and being in love with somebody." << endl;
-    cout << "Dre : You know, i tried taking the path of most resistance and failed miserably. Now im starting to understand what i want: to be a success without selling out." << endl;
+    cout << "Dre : You know, i tried taking the path of most resistance and failed miserably. Now im starting to understand what i want to be a success without selling out." << endl;
     cout << endl;
     return 0; // done
 
