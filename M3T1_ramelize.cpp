@@ -29,6 +29,19 @@ int main() {
     //Print the area 
     cout << "First area is: " << area1 << endl;
     cout << "Second area is: " << area2 << endl;
+
+
+    // Which is larger?
+    if (area1 > area2) {
+        cout << "The first one is larger." << endl;
+    }
+    else if (area2 > area1) {
+        cout << "The second one is larger." << endl;
+    }
+    else { 
+        cout << "They're both the same size." << endl;
+    
+    }
     
     return 0; 
 
