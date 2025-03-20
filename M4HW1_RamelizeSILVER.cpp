@@ -31,5 +31,5 @@ for (int i = 1; i <= 12; i++) {
     answer = firstNum * i;
     cout << firstNum << " times " << i << " is " << answer << endl;
  }
-
+return 0;
 }
